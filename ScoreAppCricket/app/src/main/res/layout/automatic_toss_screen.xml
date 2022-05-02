@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/TossWinnerTeamTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Toss Winner"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/TeamDecisionTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TossWinnerTeamTxt"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Descision"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/NumberofWicketsTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TeamDecisionTxt"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Number of Wickets"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/NumberofOversTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NumberofWicketsTxt"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Number of Overs"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/TossWinnerTeamList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TossWinnerTeamTxt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <Spinner
+        android:id="@+id/TeamDescisionList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TeamDecisionTxt"
+        android:layout_alignBottom="@+id/TossWinnerTeamList"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <Spinner
+        android:id="@+id/NumberofWicketsList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/NumberofWicketsTxt"
+        android:layout_alignBottom="@+id/TeamDescisionList"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/NumberofOversEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/NumberofOversTxt"
+        android:layout_alignBottom="@+id/NumberofWicketsList"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <Button
+        android:id="@+id/refreshtoss_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NumberofOversTxt"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
+        android:text="Refresh" />
+
+    <Button
+        android:id="@+id/startthematch_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NumberofOversTxt"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="200dp"
+        android:text="Start the Match" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/coin"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:src="@drawable/heads_background"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="400dp"/>-->
+
+
+</RelativeLayout>

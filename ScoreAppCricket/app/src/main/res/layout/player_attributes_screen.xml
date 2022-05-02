@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/PlayerNameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Player Name"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/PlayerCountryTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PlayerNameTxt"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Player Country"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/PlayerRoleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PlayerCountryTxt"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Player Role"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/BattingStyleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PlayerCountryTxt"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Batting Style"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/BowlingStyleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BattingStyleTxt"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Bowling Style"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/BattingPositionTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BowlingStyleTxt"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Batting Position"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/PlayerNameList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/PlayerNameTxt"
+        android:layout_alignBottom="@+id/PlayerNameTxt"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/PlayerCountryList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/PlayerCountryTxt"
+        android:layout_alignBottom="@+id/PlayerCountryTxt"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/PlayerRoleList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/PlayerRoleTxt"
+        android:layout_alignBottom="@+id/PlayerRoleTxt"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/BattingStyleList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/BattingStyleTxt"
+        android:layout_alignBottom="@+id/BattingStyleTxt"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/BowlingStyleList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/BowlingStyleTxt"
+        android:layout_alignBottom="@+id/BowlingStyleTxt"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/BattingPositionList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/BattingPositionTxt"
+        android:layout_alignBottom="@+id/BattingPositionTxt"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp" />
+
+
+
+
+</RelativeLayout>

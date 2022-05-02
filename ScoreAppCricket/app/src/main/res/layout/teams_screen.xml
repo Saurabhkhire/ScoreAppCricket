@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/createnewteam_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="0dp"
+        android:text="Create New Team" />
+
+    <Button
+        android:id="@+id/deleteateam_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createnewteam_button"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:text="Delete a Team" />
+
+    <Button
+        android:id="@+id/addnewplayerinteams_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deleteateam_button"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:text="Add New Players in Teams" />
+
+    <Button
+        android:id="@+id/deleteplayerfromteams_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addnewplayerinteams_button"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:text="Delete Players from Teams" />
+
+    <Button
+        android:id="@+id/changeteamname_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deleteplayerfromteams_button"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:text="Change Team Name" />
+
+    <Button
+        android:id="@+id/teamslist_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/changeteamname_button"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:text="Teams List" />
+
+
+</RelativeLayout>

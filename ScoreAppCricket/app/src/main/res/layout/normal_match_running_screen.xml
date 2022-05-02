@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MatchRunning"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/PlayerNameTxt"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:text="PlayerName"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/StrikerPlayerList"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PlayerNameTxt"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+       android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/NonStrikerPlayerList"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/StrikerPlayerList"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/BowlerNameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NonStrikerPlayerList"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="16sp"
+        android:text="Bowler Name" />
+
+    <TextView
+        android:id="@+id/BowlerNameList"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BowlerNameTxt"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/ScorecardTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BowlerNameList"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="16sp"
+        android:text="ScoreCard" />
+
+
+    <TextView
+        android:id="@+id/BatsmanRunsTxt"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/PlayerNameTxt"
+       android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="200dp"
+        android:layout_marginRight="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Runs"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/StrikerRunsEdit"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/StrikerPlayerList"
+        android:layout_alignBottom="@+id/StrikerPlayerList"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="200dp"
+        android:layout_marginRight="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/NonStrikerRunsEdit"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/NonStrikerPlayerList"
+        android:layout_alignBottom="@+id/NonStrikerPlayerList"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="200dp"
+        android:textSize="16sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+
+
+    <TextView
+        android:id="@+id/BowlerOversTxt"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/BowlerNameTxt"
+        android:layout_alignBottom="@+id/BowlerNameTxt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="200dp"
+        android:textSize="16sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Overs" />
+
+    <TextView
+        android:id="@+id/BowlerOversEdit"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/BowlerNameList"
+        android:layout_alignBottom="@+id/BowlerNameList"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="200dp"
+        android:textSize="16sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/TotalRunsEdit"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ScorecardTxt"
+        android:layout_alignBottom="@+id/ScorecardTxt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="190dp"
+        android:textSize="16sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/BatsmanBallsTxt"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/BatsmanRunsTxt"
+        android:layout_alignBottom="@+id/BatsmanRunsTxt"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Balls"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/StrikerBallsEdit"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/StrikerPlayerList"
+        android:layout_alignBottom="@+id/StrikerPlayerList"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/NonStrikerBallsEdit"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/NonStrikerPlayerList"
+        android:layout_alignBottom="@+id/NonStrikerPlayerList"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="150dp"
+        android:textSize="16sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+
+
+    <TextView
+        android:id="@+id/BowlerRunsTxt"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/BowlerNameTxt"
+        android:layout_alignBottom="@+id/BowlerNameTxt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="150dp"
+        android:textSize="16sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Runs" />
+
+    <TextView
+        android:id="@+id/BowlerRunsEdit"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/BowlerNameList"
+        android:layout_alignBottom="@+id/BowlerNameList"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="150dp"
+        android:textSize="16sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/ScorecardSlashEdit"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ScorecardTxt"
+        android:layout_alignBottom="@+id/ScorecardTxt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="180dp"
+        android:textSize="16sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="/" />
+
+
+    <TextView
+        android:id="@+id/BatsmanFoursTxt"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/BatsmanRunsTxt"
+        android:layout_alignBottom="@+id/BatsmanRunsTxt"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Fours"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/StrikerFoursEdit"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/StrikerPlayerList"
+        android:layout_alignBottom="@+id/StrikerPlayerList"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/NonStrikerFoursEdit"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/NonStrikerPlayerList"
+        android:layout_alignBottom="@+id/NonStrikerPlayerList"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="100dp"
+        android:textSize="16sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+
+
+    <TextView
+        android:id="@+id/BowlerWicketsTxt"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/BowlerNameTxt"
+        android:layout_alignBottom="@+id/BowlerNameTxt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="100dp"
+        android:textSize="16sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Wickets" />
+
+    <TextView
+        android:id="@+id/BowlerWicketsEdit"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/BowlerNameList"
+        android:layout_alignBottom="@+id/BowlerNameList"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="100dp"
+        android:textSize="16sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/TotalWicketsEdit"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ScorecardTxt"
+        android:layout_alignBottom="@+id/ScorecardTxt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="150dp"
+        android:textSize="16sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/TotalOversEdit"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ScorecardTxt"
+        android:layout_alignBottom="@+id/ScorecardTxt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="60dp"
+        android:textSize="16sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/BatsmanSixesTxt"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/BatsmanRunsTxt"
+        android:layout_alignBottom="@+id/BatsmanRunsTxt"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Sixes"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/StrikerSixesEdit"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/StrikerPlayerList"
+        android:layout_alignBottom="@+id/StrikerPlayerList"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/NonStrikerSixesEdit"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/NonStrikerPlayerList"
+        android:layout_alignBottom="@+id/NonStrikerPlayerList"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        android:textSize="16sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+
+
+    <TextView
+        android:id="@+id/BowlerMaidensTxt"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/BowlerNameTxt"
+        android:layout_alignBottom="@+id/BowlerNameTxt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        android:textSize="16sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Maidens" />
+
+    <TextView
+        android:id="@+id/BowlerMaidensEdit"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/BowlerNameList"
+        android:layout_alignBottom="@+id/BowlerNameList"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        android:textSize="16sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/OversSlashEdit"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ScorecardTxt"
+        android:layout_alignBottom="@+id/ScorecardTxt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        android:textSize="16sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="/" />
+
+
+    <TextView
+        android:id="@+id/BatsmanStrikeRateTxt"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/BatsmanRunsTxt"
+        android:layout_alignBottom="@+id/BatsmanRunsTxt"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="SR"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/StrikerStrikeRateEdit"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/StrikerPlayerList"
+        android:layout_alignBottom="@+id/StrikerPlayerList"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/NonStrikerStrikeRateEdit"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/NonStrikerPlayerList"
+        android:layout_alignBottom="@+id/NonStrikerPlayerList"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:textSize="16sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+
+
+    <TextView
+        android:id="@+id/BowlerEconomyTxt"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/BowlerNameTxt"
+        android:layout_alignBottom="@+id/BowlerNameTxt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:textSize="16sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Economy" />
+
+    <TextView
+        android:id="@+id/BowlerEconomyEdit"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/BowlerNameList"
+        android:layout_alignBottom="@+id/BowlerNameList"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:textSize="16sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/TotalSelectedOversTxt"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ScorecardTxt"
+        android:layout_alignBottom="@+id/ScorecardTxt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:textSize="16sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+
+
+    <Button
+        android:id="@+id/zeroruns_button"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/TotalSelectedOversTxt"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/oneruns_button"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/TotalSelectedOversTxt"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="90dp"
+        android:text="1" />
+    <Button
+        android:id="@+id/tworuns_button"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/TotalSelectedOversTxt"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="170dp"
+        android:text="2" />
+    <Button
+        android:id="@+id/threeruns_button"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/TotalSelectedOversTxt"
+       android:layout_marginTop="50dp"
+        android:layout_marginLeft="250dp"
+        android:text="3" />
+    <Button
+        android:id="@+id/fourruns_button"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/zeroruns_button"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:text="4" />
+    <Button
+        android:id="@+id/fiveruns_button"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/zeroruns_button"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="90dp"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/sixruns_button"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/zeroruns_button"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="170dp"
+        android:text="6" />
+
+    <Button
+        android:id="@+id/switch_button"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/zeroruns_button"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="250dp"
+        android:textSize="8.5sp"
+        android:text="Switch" />
+
+    <Button
+        android:id="@+id/retirehurt_button"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/fourruns_button"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:text="RD" />
+
+    <Button
+        android:id="@+id/undo_button"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/fourruns_button"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="90dp"
+        android:textSize="12sp"
+        android:text="Undo" />
+
+
+
+    <CheckBox
+        android:id="@+id/radioByes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Byes/Leg Byes"
+        android:layout_below="@+id/retirehurt_button"
+        android:layout_marginTop="10dp"
+        android:checked="false"
+        android:textSize="15dp" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioByes"
+        android:id="@+id/radioNoBallWideGroup">
+
+    <CheckBox
+        android:id="@+id/radioWide"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Wide"
+
+        android:layout_marginTop="10dp"
+        android:checked="false"
+        android:textSize="15dp" />
+
+
+    <CheckBox
+        android:id="@+id/radioNoBall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="No Ball"
+        android:layout_below="@+id/radioByes"
+        android:layout_marginTop="10dp"
+        android:checked="false"
+        android:textSize="15dp" />
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/radioWicket"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Wicket"
+        android:layout_below="@+id/radioNoBallWideGroup"
+        android:layout_marginTop="10dp"
+        android:checked="false"
+        android:textSize="15dp" />
+
+
+</RelativeLayout>

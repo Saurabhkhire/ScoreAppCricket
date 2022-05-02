@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/SelectStrikerBatsmanTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Select Striker Batsman"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/SelectNonStrikerBatsmanTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SelectStrikerBatsmanTxt"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Select Non Striker Batsman"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/SelectBowlerTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SelectNonStrikerBatsmanTxt"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Select Bowler"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/SelectStrikerBatsmanList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/SelectStrikerBatsmanTxt"
+        android:layout_alignBottom="@+id/SelectStrikerBatsmanTxt"
+        android:layout_marginStart="250dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/SelectNonStrikerBatsmanList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/SelectNonStrikerBatsmanTxt"
+        android:layout_alignBottom="@+id/SelectNonStrikerBatsmanTxt"
+        android:layout_marginStart="250dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/SelectBowlerList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/SelectBowlerTxt"
+        android:layout_alignBottom="@+id/SelectBowlerTxt"
+        android:layout_marginStart="250dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp" />
+
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SelectBowlerList"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="60dp"
+        android:text="Next" />
+
+
+</RelativeLayout>
