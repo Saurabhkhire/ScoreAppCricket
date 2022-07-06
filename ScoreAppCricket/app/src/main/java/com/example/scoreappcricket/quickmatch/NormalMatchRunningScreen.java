@@ -25,7 +25,7 @@ public class NormalMatchRunningScreen extends AppCompatActivity {
     private TextView StrikerRunsEdit, NonStrikerRunsEdit, BowlerOversEdit,TotalRunsEdit,StrikerBallsEdit,NonStrikerBallsEdit,
             BowlerRunsEdit,StrikerFoursEdit,NonStrikerFoursEdit,StrikerSixesEdit,NonStrikerSixesEdit,BowlerWicketsEdit,TotalWicketsEdit,
             TotalOversEdit,TotalSelctedOversEdit,BowlerMaidensEdit,StrikerStrikeRateEdit,NonStrikerStrikeRateEdit,BowlerEconomyEdit,StrikerPlayerEdit,NonStrikerPlayerEdit,BowlerNameEdit;
-    private Button ZeroRunsBtn, OneRunsBtn, TwoRunsBtn, ThreeRunsBtn, FourRunsBtn, FiveRunsBtn, SixRunsBtn, StrikerPlayerNextBtn, NonStrikerPlayerNextBtn, BowlerNextBtn ;
+    private Button ZeroRunsBtn, OneRunsBtn, TwoRunsBtn, ThreeRunsBtn, FourRunsBtn, FiveRunsBtn, SixRunsBtn, StrikerPlayerNextBtn, NonStrikerPlayerNextBtn, BowlerNextBtn, ScorecardBtn ;
     private PlayerDatabase playerDatabase;
     private TeamDatabase teamDatabase;
     private QuickMatchDatabase quickMatchDatabase;
@@ -94,6 +94,7 @@ public class NormalMatchRunningScreen extends AppCompatActivity {
         checkBoxWide = (CheckBox) findViewById(R.id.radioWide);
         checkBoxNoBall = (CheckBox) findViewById(R.id.radioNoBall);
         checkBoxWicket = (CheckBox) findViewById(R.id.radioWicket);
+        ScorecardBtn = findViewById(R.id.scorecard_button);
 
         StrikerRunsEdit.setText("0");
         NonStrikerRunsEdit.setText("0");
@@ -2168,19 +2169,19 @@ public class NormalMatchRunningScreen extends AppCompatActivity {
 
         });
 
-//            showPlayersBtn.setOnClickListener(new View.OnClickListener() {
-//
-//                public void onClick(View v) {
-//
-//                    Intent intent = new Intent(MainActivity.this, PlayersList.class);
-//
-//                    // start the activity connect to the specified class
-//                    startActivity(intent);
-//
-//
-//
-//                }
-//            });
+        ScorecardBtn.setOnClickListener(new View.OnClickListener() {
+
+                public void onClick(View v) {
+
+                    Intent intent = new Intent(NormalMatchRunningScreen.this, FirstInningsScorecardScreen.class);
+
+                    // start the activity connect to the specified class
+                    startActivity(intent);
+
+
+
+                }
+            });
     }
 
 }

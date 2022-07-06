@@ -507,14 +507,13 @@
         android:text="" />
 
 
-
     <Button
         android:id="@+id/zeroruns_button"
         android:layout_width="70dp"
         android:layout_height="50dp"
         android:layout_below="@+id/TotalSelectedOversTxt"
-        android:layout_marginTop="50dp"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
         android:text="0" />
 
     <Button
@@ -522,24 +521,26 @@
         android:layout_width="70dp"
         android:layout_height="50dp"
         android:layout_below="@+id/TotalSelectedOversTxt"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_marginLeft="90dp"
         android:text="1" />
+
     <Button
         android:id="@+id/tworuns_button"
         android:layout_width="70dp"
         android:layout_height="50dp"
         android:layout_below="@+id/TotalSelectedOversTxt"
-        android:layout_marginTop="50dp"
         android:layout_marginLeft="170dp"
+        android:layout_marginTop="30dp"
         android:text="2" />
+
     <Button
         android:id="@+id/threeruns_button"
         android:layout_width="70dp"
         android:layout_height="50dp"
         android:layout_below="@+id/TotalSelectedOversTxt"
-       android:layout_marginTop="50dp"
         android:layout_marginLeft="250dp"
+        android:layout_marginTop="30dp"
         android:text="3" />
     <Button
         android:id="@+id/fourruns_button"
@@ -596,7 +597,15 @@
         android:textSize="12sp"
         android:text="Undo" />
 
-
+    <Button
+        android:id="@+id/scorecard_button"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/fourruns_button"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="180dp"
+        android:textSize="12sp"
+        android:text="Scorecard" />
 
     <CheckBox
         android:id="@+id/radioByes"

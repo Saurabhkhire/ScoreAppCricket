@@ -6,6 +6,9 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import com.example.scoreappcricket.model.BatsmanScorecardList;
+import com.example.scoreappcricket.model.BowlersScorecardList;
+
 import java.util.ArrayList;
 
 public class QuickMatchDatabase extends SQLiteOpenHelper{
@@ -243,6 +246,109 @@ public class QuickMatchDatabase extends SQLiteOpenHelper{
         db.close();
 
 
+    }
+
+    public BatsmanScorecardList getBattingScorecard() {
+        BatsmanScorecardList batsmanScorecardList = new BatsmanScorecardList();
+
+        ArrayList<String> batsmanList = new ArrayList<String>();
+        ArrayList<String> wicketTypeList = new ArrayList<String>();
+        ArrayList<String> batsmanRunsList = new ArrayList<String>();
+        ArrayList<String> batsmanBallsList = new ArrayList<String>();
+        ArrayList<String> batsmanFoursList = new ArrayList<String>();
+        ArrayList<String> batsmanSixesList = new ArrayList<String>();
+        ArrayList<String> batsmanStrikeRateList = new ArrayList<String>();
+        String selectQuery = "SELECT * FROM NormalMatchTeamOneBatsmanTemp";
+        String BatsmanName = null;
+        String WicketType = null;
+        Integer BatsmanRuns = null;
+        Integer BatsmanBalls = null;
+        Integer BatsmanFours = null;
+        Integer BatsmanSixes = null;
+        Double BatsmanStrikeRate = null;
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+        if (cursor.moveToFirst()==true) {
+            do {
+
+                WicketType = cursor.getString(1);
+                    BatsmanName = cursor.getString(0);
+                    batsmanList.add(BatsmanName);
+                    BatsmanRuns = cursor.getInt(2);
+                batsmanRunsList.add(BatsmanRuns.toString());
+                    BatsmanBalls = cursor.getInt(3);
+                batsmanBallsList.add(BatsmanBalls.toString());
+                    BatsmanFours = cursor.getInt(4);
+                batsmanFoursList.add(BatsmanFours.toString());
+                    BatsmanSixes = cursor.getInt(5);
+                batsmanSixesList.add(BatsmanSixes.toString());
+                    BatsmanStrikeRate = cursor.getDouble(6);
+                batsmanStrikeRateList.add(BatsmanStrikeRate.toString());
+
+
+            } while (cursor.moveToNext());
+
+
+        }
+
+        batsmanScorecardList.setBatsmanNamesList(batsmanList);
+        batsmanScorecardList.setBatsmanRunsList(batsmanRunsList);
+        batsmanScorecardList.setBatsmanBallsList(batsmanBallsList);
+        batsmanScorecardList.setBatsmanFoursList(batsmanFoursList);
+        batsmanScorecardList.setBatsmanSixesList(batsmanSixesList);
+        batsmanScorecardList.setBatsmanStrikeRateList(batsmanStrikeRateList);
+       // batsmanScorecardList.setWicketTypeList();
+        return batsmanScorecardList;
+    }
+
+    public BowlersScorecardList getBowlingScorecard() {
+        BowlersScorecardList bowlersScorecardList = new BowlersScorecardList();
+
+        ArrayList<String> bowlersList = new ArrayList<String>();
+        ArrayList<String> bowlersOversList = new ArrayList<String>();
+        ArrayList<String> bowlersRunsList = new ArrayList<String>();
+        ArrayList<String> bowlersWicketsList = new ArrayList<String>();
+        ArrayList<String> bowlersMaidensList = new ArrayList<String>();
+        ArrayList<String> bowlersEconomyList = new ArrayList<String>();
+        String selectQuery = "SELECT * FROM NormalMatchTeamTwoBowlersTemp";
+        String BowlerName = null;
+        Double BowlerOvers = null;
+        Integer BowlerRuns = null;
+        Integer BowlerWickets = null;
+        Integer BowlerMaidens = null;
+        Double BowlerEconomy = null;
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+        if (cursor.moveToFirst()==true) {
+            do {
+
+                BowlerName = cursor.getString(0);
+                bowlersList.add(BowlerName);
+                BowlerOvers = cursor.getDouble(1);
+                bowlersOversList.add(BowlerOvers.toString());
+                BowlerRuns = cursor.getInt(2);
+                bowlersRunsList.add(BowlerRuns.toString());
+                BowlerWickets = cursor.getInt(3);
+                bowlersWicketsList.add(BowlerWickets.toString());
+                BowlerMaidens = cursor.getInt(4);
+                bowlersMaidensList.add(BowlerMaidens.toString());
+                BowlerEconomy = cursor.getDouble(5);
+                bowlersEconomyList.add(BowlerEconomy.toString());
+
+            } while (cursor.moveToNext());
+
+
+        }
+
+        bowlersScorecardList.setBowlersNamesList(bowlersList);
+        bowlersScorecardList.setBowlerOversList(bowlersOversList);
+        bowlersScorecardList.setBowlerRunsList(bowlersRunsList);
+        bowlersScorecardList.setBowlersWicketsList(bowlersWicketsList);
+        bowlersScorecardList.setBowlersMaidensList(bowlersMaidensList);
+        bowlersScorecardList.setBowlersEconomyList(bowlersMaidensList);
+        return bowlersScorecardList;
     }
 
 

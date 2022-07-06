@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Saurabh/Projects/ScoreAppCricket/ScoreAppCricket/app/src/main/res/layout/add_new_player_in_team_list.xml" value="0.19927536231884058" />
+        <entry key="..\:/Saurabh/Projects/ScoreAppCricket/ScoreAppCricket/app/src/main/res/layout/create_players_screen.xml" value="0.19927536231884058" />
+        <entry key="..\:/Saurabh/Projects/ScoreAppCricket/ScoreAppCricket/app/src/main/res/layout/normal_match_first_innings_scorecard_screen.xml" value="0.19927536231884058" />
+        <entry key="..\:/Saurabh/Projects/ScoreAppCricket/ScoreAppCricket/app/src/main/res/layout/normal_match_running_screen.xml" value="0.2" />
         <entry key="..\:/Users/SatishK/AndroidStudioProjects/ScoreAppCricket/app/src/main/res/drawable/heads.xml" value="0.13229166666666667" />
         <entry key="..\:/Users/SatishK/AndroidStudioProjects/ScoreAppCricket/app/src/main/res/drawable/tails.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/SatishK/AndroidStudioProjects/ScoreAppCricket/app/src/main/res/layout/activity_listview.xml" value="0.11145833333333334" />

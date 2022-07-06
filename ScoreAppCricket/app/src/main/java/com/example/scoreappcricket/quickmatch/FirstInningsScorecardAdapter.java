@@ -44,16 +44,7 @@ public class FirstInningsScorecardAdapter extends BaseAdapter {
         view = inflater.inflate(R.layout.normal_match_first_innings_scorecard_screen, parent, false);
 
         // get the reference of textView and button
-        TextView batsmanName = (TextView) view.findViewById(R.id.BatsmanEdit);
-        TextView batsmanRuns = (TextView) view.findViewById(R.id.BatsmanRunsEdit);
-        TextView batsmanBalls = (TextView) view.findViewById(R.id.BatsmanBallsEdit);
-        TextView batsmanFours = (TextView) view.findViewById(R.id.BatsmanFoursEdit);
-        TextView batsmanSixes = (TextView) view.findViewById(R.id.BatsmanSixesEdit);
-        TextView batsmanSr = (TextView) view.findViewById(R.id.BatsmanStrikeRateEdit);
-        TextView batsmanWicketType = (TextView) view.findViewById(R.id.BatsmanWicketTypeEdit);
-        batsmanName.setText(mA.get(position));
-        batsmanRuns.setText(mB.get(position));
-        batsmanBalls.setText(mC.get(position));
+
         //batsmanFours.setText(mArrSchoolData.get(position));
        // batsmanSixes.setText(mArrSchoolData.get(position));
        // batsmanSr.setText(mArrSchoolData.get(position));
